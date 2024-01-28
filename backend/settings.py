@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 import django_heroku
+import dj_database_url
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,7 +28,7 @@ SECRET_KEY = 'django-insecure-^ql0cd-k0qeo%_1x9+x4io3q&ylir*lu)p#^g%=-4$5b6$f5yg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 CORS_ALLOWED_ORIGINS = [ 'http://127.0.0.1:8000' , 'http://localhost:3000'
 ]
 CORS_ALLOW_ALL_ORIGINS = False
