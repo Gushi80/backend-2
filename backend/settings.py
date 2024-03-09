@@ -36,6 +36,7 @@ CORS_ALLOW_ALL_ORIGINS = False
 # Application definition
 
 INSTALLED_APPS = [
+    'donations',
     'user',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
     "corsheaders",
     'rest_framework.authtoken',
     'django_heroku',
+    'paypal.standard.ipn',
 ]
 
 MIDDLEWARE = [
@@ -139,4 +141,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+PAYPAL_RECEIVER_EMAIL="asomdweentontonsomdiaspora@gmail.com"
+PAYPAL_TEST=True
 
